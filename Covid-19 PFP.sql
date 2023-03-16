@@ -12,10 +12,13 @@ order by 3,4;
 SELECT Location, date, total_cases, new_cases, total_deaths, population
 FROM Portfolio_Project.dbo.Covid_deaths
 order by 1,2; 
---ALTER TABLE Covid_Deaths
---ALTER COLUMN total_deaths float
---ALTER TABLE Covid_Deaths
---ALTER COLUMN total_cases float
+
+
+ALTER TABLE Covid_Deaths
+ALTER COLUMN total_deaths float
+ALTER TABLE Covid_Deaths
+ALTER COLUMN total_cases float
+
 
 --Looking at total cases VS total deaths
 --Shows the likelihood of dying if you contract covid in your country
